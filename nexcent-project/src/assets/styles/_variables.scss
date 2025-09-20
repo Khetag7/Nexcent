@@ -1,0 +1,41 @@
+$font-primary: 'Inter 18pt', sans-serif; 
+
+@mixin g-btn
+{
+    border-radius: 4px;
+    padding: 14px 32px;
+    background: #4caf4f;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #fff;
+    transition: .3s;
+}
+@mixin g-btn-hover
+{
+    transition: .3s;
+    border: 1px solid #4caf4f;
+    border-radius: 4px;
+    padding: 16px 32px;
+    background: #f5f7fa;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    text-align: center;
+    color: #4caf4f;
+}
+@mixin g-texts-header
+{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #18191f;
+}
+@mixin g-texts-footer
+{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #f5f7fa;
+}

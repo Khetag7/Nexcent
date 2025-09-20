@@ -1,0 +1,58 @@
+@use '@/assets/styles/variables' as *;
+
+
+.header__list
+{
+    display: flex;
+    gap: 50px;
+    
+    &-el
+    {
+        @include g-texts-header
+    }
+}
+.active-link
+{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #18191f;
+}
+.header__entrance
+{
+    display: flex;
+    gap: 14px;
+    
+    &-el-login
+    {
+        border-radius: 6px;
+        padding: 10px 20px;
+        background: #f5f7fa;
+    }
+    &-el-login:hover
+    {
+        
+    }
+    &-text-login
+    {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 143%;
+        text-align: center;
+        color: #4caf4f;
+    }
+    &-el-signUp
+    {
+        border-radius: 6px;
+        padding: 10px 20px;
+        background: #4caf4f;
+    }
+    &-text-signUp
+    {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 143%;
+        text-align: center;
+        color: #fff;
+    }
+}
