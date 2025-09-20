@@ -8,11 +8,13 @@
     
     &-el
     {
-        @include g-texts-header
+        @include g-texts-header;
+        transition: .3s;
     }
     &-el:hover
     {
-
+        transition: .3s;
+        color: #8f8f8f;
     }
 }
 .active-link
