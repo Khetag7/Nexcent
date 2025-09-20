@@ -8,7 +8,13 @@
     
     &-el
     {
-        @include g-texts-header
+        @include g-texts-header;
+        transition: .3s;
+    }
+    &-el:hover
+    {
+        transition: .3s;
+        color: #8f8f8f;
     }
 }
 .active-link
@@ -29,26 +35,50 @@
         padding: 10px 20px;
         background: #f5f7fa;
     }
-    &-el-login:hover
-    {
-        
-    }
     &-text-login
     {
+        display: inline-block;
         font-weight: 500;
         font-size: 14px;
         line-height: 143%;
         text-align: center;
         color: #4caf4f;
+        border-bottom: 2px solid #f5f7fa;
+        padding-bottom: 1px;
+        transition: .3s;
+        width: 45px;
+    }
+    &-text-login:hover
+    {
+        transition: .3s;
+        padding-bottom: 1px;
+        border-bottom: 2px solid #4caf4f;
+        width: 45px;
     }
     &-el-signUp
     {
         border-radius: 6px;
         padding: 10px 20px;
         background: #4caf4f;
+        transition: .3s;
+        border: 1px solid #4caf4f;
+    }
+    &-el-signUp:hover
+    {
+        padding: 10px 20px;
+        transition: .3s;
+        border: 1px solid #4caf4f;
+        background: #f5f7fa;
+        color: #4caf4f;
+
+        .header__entrance-text-signUp
+        {
+            color: #4caf4f; 
+        }
     }
     &-text-signUp
     {
+        display: inline-block;
         font-weight: 500;
         font-size: 14px;
         line-height: 143%;
