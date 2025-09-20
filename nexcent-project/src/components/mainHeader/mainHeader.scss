@@ -1,42 +1,36 @@
 @use '@/assets/styles/variables' as *;
 
-
-.header__list
-{
+.header__list {
     display: flex;
     gap: 50px;
     
-    &-el
-    {
+    &-el {
         @include g-texts-header;
         transition: .3s;
     }
-    &-el:hover
-    {
+    &-el:hover {
         transition: .3s;
         color: #8f8f8f;
     }
 }
-.active-link
-{
+
+.active-link {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     color: #18191f;
 }
-.header__entrance
-{
+
+.header__entrance {
     display: flex;
     gap: 14px;
     
-    &-el-login
-    {
+    &-el-login {
         border-radius: 6px;
         padding: 10px 20px;
         background: #f5f7fa;
     }
-    &-text-login
-    {
+    &-text-login {
         display: inline-block;
         font-weight: 500;
         font-size: 14px;
@@ -48,36 +42,31 @@
         transition: .3s;
         width: 45px;
     }
-    &-text-login:hover
-    {
+    &-text-login:hover {
         transition: .3s;
         padding-bottom: 1px;
         border-bottom: 2px solid #4caf4f;
         width: 45px;
     }
-    &-el-signUp
-    {
+    &-el-signUp {
         border-radius: 6px;
         padding: 10px 20px;
         background: #4caf4f;
         transition: .3s;
         border: 1px solid #4caf4f;
     }
-    &-el-signUp:hover
-    {
+    &-el-signUp:hover {
         padding: 10px 20px;
         transition: .3s;
         border: 1px solid #4caf4f;
         background: #f5f7fa;
         color: #4caf4f;
 
-        .header__entrance-text-signUp
-        {
+        .header__entrance-text-signUp {
             color: #4caf4f; 
         }
     }
-    &-text-signUp
-    {
+    &-text-signUp {
         display: inline-block;
         font-weight: 500;
         font-size: 14px;
@@ -86,22 +75,25 @@
         color: #fff;
     }
 }
-.header__burger-mobile
-{
-    display: none;
 
-    & div
-    {
+.header__burger-mobile {
+    display: none;
+    flex-direction: column;
+    gap: 7px;
+    cursor: pointer;
+    z-index: 1001;
+
+    & div {
         transition: .3s;
-        width: 25px;
+        width: 30px;
         height: 2px;
         background-color: #000;
     }
 }
-.header__burger-mobile.active
-{
-     & div:first-child {
-        transform: rotate(45deg) translate(6px, 5px);
+
+.header__burger-mobile.active {
+    & div:first-child {
+        transform: rotate(45deg) translate(6px, 6px);
         transition: .3s;
     }
 
@@ -111,35 +103,90 @@
     }
 
     & div:last-child {
-        transform: rotate(-45deg) translate(6px, -6px);
+        transform: rotate(-45deg) translate(6px, -7px);
         transition: .3s;
     }
 }
-@media(max-width: 1248px)
-{
-    header
-    {
+
+.mobile-menu-buttons {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 30px;
+    
+    .header__entrance-el-login,
+    .header__entrance-el-signUp {
+        width: 180px;
+        text-align: center;
+    }
+    
+    .header__entrance-text-login,
+    .header__entrance-text-signUp {
+        width: auto;
+    }
+}
+
+@media (max-width: 1248px) {
+    header {
         padding: 22px 22px;
     }
-    .header__list
-    {
+    .header__list {
         gap: 30px;
     }
 }
-@media(max-width: 886px)
-{
-    .header__navigation
-    {
-        display: none;
-    }
-    .header__entrance
-    {
-        display: none;
-    }
-    .header__burger-mobile
-    {
+
+@media (max-width: 886px) {
+    .header__navigation {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: white;
         display: flex;
         flex-direction: column;
-        gap: 6px;
+        justify-content: center;
+        align-items: center;
+        transition: left 0.3s ease;
+        z-index: 1000;
+        padding: 80px 20px 40px;
+    }
+    
+    .header__navigation.active {
+        left: 0;
+    }
+    
+    .header__list {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+        
+        &-el {
+            font-size: 18px;
+            padding: 10px 0;
+        }
+    }
+    
+    .header__entrance {
+        display: none;
+    }
+    
+    .header__burger-mobile {
+        display: flex;
+    }
+    
+    .mobile-menu-buttons {
+        display: flex;
+    }
+    
+    .header__navigation.active::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
     }
 }
