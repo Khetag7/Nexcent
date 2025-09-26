@@ -1,0 +1,22 @@
+@use '@/assets/styles/variables' as *;
+
+.btnComponent
+{
+    @include g-btn;
+
+    & img
+    {
+      padding-left: 10.5px; 
+    }
+
+    &:hover
+    {
+        @include g-btn-hover;
+
+      & img
+      {
+        transition: .3s;
+         filter: invert(100%);
+      }
+    }
+}

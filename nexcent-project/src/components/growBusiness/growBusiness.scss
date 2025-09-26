@@ -1,0 +1,200 @@
+.growBusiness {
+    background: #f5f7fa;
+    padding: 0px 144px;
+    padding-top: 96px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.block__wrapper {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.slider__track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 104px;
+    flex-shrink: 0;
+    width: 100%;
+    min-height: 400px;
+}
+
+.slider__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    background: white;
+    border: 2px solid #4CAF4F;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(76, 175, 79, 0.2);
+    
+    &:hover {
+        background: #4CAF4F;
+        transform: translateY(-50%) scale(1.1);
+        
+        svg path {
+            stroke: white;
+        }
+    }
+    
+    &:active {
+        transform: translateY(-50%) scale(0.95);
+    }
+}
+
+.slider__nav--prev {
+    left: 20px;
+}
+
+.slider__nav--next {
+    right: 20px;
+}
+
+.block__left {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: start;
+    max-width: 657px;
+}
+
+.block__left-title {
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 119%;
+    color: #4d4d4d;
+    
+    & span {
+        color: #4caf4f;
+    }
+}
+
+.block__left-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #717171;
+}
+
+.block__circles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding-bottom: 16px;
+}
+
+.circle {
+    background-color: #4caf4f;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    opacity: 0.3;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+    &:hover {
+        opacity: 0.7;
+        transform: scale(1.2);
+    }
+}
+
+.active__circle {
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+@media (max-width: 1248px) {
+    .growBusiness {
+        padding: 0px 90px;
+        padding-top: 96px;
+    }
+    
+    .slide {
+        gap: 50px;
+    }
+    
+    .block__left-title {
+        font-size: 32px;
+    }
+    
+    .block__left-text {
+        font-size: 13px;
+    }
+    
+    .block__right img {
+        max-width: 300px;
+    }
+    
+    .slider__nav {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 886px) {
+    .growBusiness {
+        padding: 0px 30px;
+        padding-top: 40px;
+    }
+    
+    .slide {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .block__left {
+        align-items: center;
+        gap: 16px;
+    }
+    
+    .block__left-title {
+        margin-bottom: 8px;
+    }
+    
+    .slider__nav {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .slider__nav--prev {
+        left: 10px;
+    }
+    
+    .slider__nav--next {
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slide {
+        gap: 20px;
+    }
+    
+    .block__left-title {
+        font-size: 28px;
+    }
+}
