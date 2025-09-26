@@ -2,9 +2,13 @@ $font-primary: 'Inter 18pt', sans-serif;
 
 @mixin g-btn
 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 4px;
     padding: 14px 32px;
     background: #4caf4f;
+    border: 1px solid #4caf4f;
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
@@ -17,7 +21,7 @@ $font-primary: 'Inter 18pt', sans-serif;
     transition: .3s;
     border: 1px solid #4caf4f;
     border-radius: 4px;
-    padding: 16px 32px;
+    padding: 14px 32px;
     background: #f5f7fa;
     font-weight: 400;
     font-size: 18px;
