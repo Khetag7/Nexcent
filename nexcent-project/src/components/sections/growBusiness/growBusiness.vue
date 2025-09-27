@@ -77,7 +77,7 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import btnComponent from "../btnComponent/btnComponent.vue";
+import btnComponent from "@/components/common/btnComponent/btnComponent.vue";
 
 const currentSlide = ref(0);
 const totalSlides = 3;
@@ -98,5 +98,5 @@ setInterval(nextSlide, 5000);
 </script>
 
 <style scoped lang="scss">
-@use '@/components/growBusiness/growBusiness.scss';
+@use '@/components/sections/growBusiness/growBusiness.scss';
 </style>
