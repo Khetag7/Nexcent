@@ -92,6 +92,10 @@
 }
 
 .header__burger-mobile.active {
+    position: fixed;
+    top: 22px; 
+    right: 22px; 
+
     & div:first-child {
         transform: rotate(45deg) translate(6px, 6px);
         transition: .3s;
@@ -129,6 +133,7 @@
 @media (max-width: 1248px) {
     header {
         padding: 22px 22px;
+        position: relative;
     }
     .header__list {
         gap: 30px;
@@ -150,6 +155,7 @@
         transition: left 0.3s ease;
         z-index: 1000;
         padding: 80px 20px 40px;
+        overflow-y: auto;
     }
     
     .header__navigation.active {
@@ -173,20 +179,11 @@
     
     .header__burger-mobile {
         display: flex;
+        position: relative;
     }
     
     .mobile-menu-buttons {
         display: flex;
     }
     
-    .header__navigation.active::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: -1;
-    }
 }

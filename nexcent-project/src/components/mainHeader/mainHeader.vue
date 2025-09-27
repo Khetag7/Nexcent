@@ -63,11 +63,38 @@ const isMenuOpen = ref(false)
 const toggleMenu = () => 
 {
     isMenuOpen.value = !isMenuOpen.value
+
+    if(isMenuOpen.value)
+    {
+        document.body.style.overflow = 'hidden';
+        document.body.style.position = 'fixed';
+        document.body.style.width = '100%';
+        document.body.style.top = `-${window.scrollY}px`;
+    }
+    else
+    {
+        const scrollY = document.body.style.top
+        document.body.style.overflow = '';
+        document.body.style.position = '';
+        document.body.style.width = '';
+        document.body.style.top = ``;
+        window.scrollTo(0, parseInt(scrollY || '0') * -1)
+    }
 }
 
 const closeMenu = () => 
 {
-    isMenuOpen.value = false
+    if(isMenuOpen.value)
+    {
+        isMenuOpen.value = false
+        
+        const scrollY = document.body.style.top;
+        document.body.style.overflow = '';
+        document.body.style.position = '';
+        document.body.style.width = '';
+        document.body.style.top = '';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    }
 }
 
 watch(route, () => 
@@ -75,6 +102,14 @@ watch(route, () =>
     closeMenu()
 })
 
+import { onUnmounted } from "vue";
+onUnmounted(() => 
+{
+    if(isMenuOpen.value)
+    {
+        closeMenu()
+    }
+})
 </script>
 
 <style scoped lang="scss">

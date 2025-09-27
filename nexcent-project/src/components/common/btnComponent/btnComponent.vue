@@ -24,5 +24,5 @@ const buttonItem = computed(() => {
 </script>
 
 <style scoped lang="scss">
-@use '@/components/btnComponent/btnComponent.scss';
+@use '@/components/common/btnComponent/btnComponent.scss';
 </style>
