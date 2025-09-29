@@ -2,6 +2,7 @@
 	<lay>
 		<growBusiness />
 		<ourClients />
+		<ManageCommunity />
 
 	</lay>
 </template>
@@ -9,6 +10,7 @@
 	import lay from "@/layouts/lay.vue"
 	import growBusiness from "@/components/sections/growBusiness/growBusiness.vue";
 	import ourClients from "@/components/sections/ourClients/ourClients.vue";
+	import ManageCommunity from "@/components/sections/ManageCommunity/ManageCommunity.vue";
 	
 
 	

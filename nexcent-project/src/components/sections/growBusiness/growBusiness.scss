@@ -1,6 +1,5 @@
 .growBusiness {
     background: #f5f7fa;
-    padding: 0px 144px;
     padding-top: 96px;
     margin-bottom: 40px;
     overflow: hidden;
@@ -127,9 +126,8 @@
 }
 
 @media (max-width: 1248px) {
-    .growBusiness {
+    .container {
         padding: 0px 90px;
-        padding-top: 96px;
     }
     
     .slide {
@@ -155,8 +153,12 @@
 }
 
 @media (max-width: 886px) {
-    .growBusiness {
+    .container {
         padding: 0px 30px;
+    }
+
+    .growBusiness
+    {
         padding-top: 40px;
     }
     

@@ -5,3 +5,12 @@
     justify-content: space-between;
     padding: 25px 0;
 }
+.clients__logo
+{
+    transition: filter 0.1s ease-out;
+
+    &:hover
+    {
+        filter: sepia(1) hue-rotate(90deg) saturate(6) brightness(1.4) contrast(1.5);
+    }
+}
