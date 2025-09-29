@@ -1,6 +1,6 @@
 <template>
     <header>
-        <div class="container g-flex">
+        <div class="header-container g-flex">
             <router-link to="/" class="header__logo">
                 <img src="@/assets/images/Logo.png" alt="Nexcent Logo">
             </router-link>

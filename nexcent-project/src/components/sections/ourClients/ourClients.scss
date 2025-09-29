@@ -1,6 +1,5 @@
 .ourClients
 {
-    padding: 0 144px;
     margin-bottom: 40px;
 }
 .wrapper__block
@@ -40,15 +39,24 @@
 {
     display: none;
 }
+.clients__logo
+{
+    transition: filter 0.1s ease-out;
+
+    &:hover
+    {
+        filter: sepia(1) hue-rotate(90deg) saturate(6) brightness(1.4) contrast(1.5);
+    }
+}
 @media (max-width: 1248px) {
-    .ourClients
+    .container
     {
         padding: 0px 90px;
     }
 }
 
 @media (max-width: 886px) {
-    .ourClients
+    .container
     {
         padding: 0px 30px;
     }

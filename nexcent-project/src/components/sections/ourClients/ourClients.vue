@@ -13,14 +13,14 @@
 
                 <div class="clients__logoes-mobile">
                     <div>
-                        <img :src="ClientLogo" alt="">
-                        <img :src="ClientLogo2" alt="">
-                        <img :src="ClientLogo3" alt="">
+                        <img :src="ClientLogo" class="clients__logo" alt="">
+                        <img :src="ClientLogo2" class="clients__logo" alt="">
+                        <img :src="ClientLogo3" class="clients__logo" alt="">
                     </div>
                     <div>
-                        <img :src="ClientLogo4" alt="">
-                        <img :src="ClientLogo5" alt="">
-                        <img :src="ClientLogo6" alt="">
+                        <img :src="ClientLogo4" class="clients__logo" alt="">
+                        <img :src="ClientLogo5" class="clients__logo" alt="">
+                        <img :src="ClientLogo6" class="clients__logo" alt="">
                     </div>
                 </div>
             </div>

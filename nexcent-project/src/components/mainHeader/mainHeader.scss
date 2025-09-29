@@ -1,5 +1,13 @@
 @use '@/assets/styles/variables' as *;
 
+.header-container
+{
+    max-width: 1440px;
+	margin: 0 auto;
+	width: 100%;
+    padding: 22px 105.5px;
+}
+
 .header__list {
     display: flex;
     gap: 50px;
@@ -93,7 +101,7 @@
 
 .header__burger-mobile.active {
     position: fixed;
-    top: 22px; 
+    top: 26px; 
     right: 22px; 
 
     & div:first-child {
@@ -131,7 +139,7 @@
 }
 
 @media (max-width: 1248px) {
-    header {
+    .header-container {
         padding: 22px 22px;
         position: relative;
     }
