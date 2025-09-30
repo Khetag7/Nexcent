@@ -29,6 +29,34 @@ $font-primary: 'Inter 18pt', sans-serif;
     text-align: center;
     color: #4caf4f;
 }
+@mixin g-btn2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 14px 32px;
+    background: #4caf4f;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #fff;
+    transition: .3s;
+}
+@mixin g-btn-hover2
+{
+    transition: .3s;
+    border-radius: 4px;
+    padding: 14px 32px;
+    background: #e8f5e9;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    text-align: center;
+    color: #4caf4f;
+}
+
 @mixin g-texts-header
 {
     font-weight: 400;

@@ -3,6 +3,8 @@
 		<growBusiness />
 		<ourClients />
 		<ManageCommunity />
+		<unseenPixelgrade />
+
 
 	</lay>
 </template>
@@ -11,7 +13,7 @@
 	import growBusiness from "@/components/sections/growBusiness/growBusiness.vue";
 	import ourClients from "@/components/sections/ourClients/ourClients.vue";
 	import ManageCommunity from "@/components/sections/ManageCommunity/ManageCommunity.vue";
-	
+	import unseenPixelgrade from "@/components/sections/unseenPixelgrade/unseenPixelgrade.vue";
 
 	
 </script>
