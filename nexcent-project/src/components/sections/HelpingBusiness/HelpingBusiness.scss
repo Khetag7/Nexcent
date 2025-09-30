@@ -1,0 +1,174 @@
+.helpingBusiness
+{
+    margin-bottom: 48px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background: #f5f7fa;
+}
+.block__wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.block__left
+{
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    max-width: 414px;
+
+    &-title
+    {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 122%;
+        color: #4d4d4d;
+
+        & span
+        {
+            color: #4caf4f;
+        }
+    }
+
+    &-text
+    {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #18191f;
+    }
+}
+.block__right
+{
+    display: flex;
+    gap: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &-card
+    {
+        display: flex;
+        gap: 16px;
+
+
+        &-texts-title
+        {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 129%;
+            color: #4d4d4d;
+        }
+
+        &-texts-text
+        {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #717171;
+        }
+    }
+}
+.block__right-group-first
+{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 40px;
+}
+.block__right-group-last
+{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 40px;
+}
+.block__right-logo
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width: 1248px) {
+    .container
+    {
+        padding: 0px 90px;
+    }
+    .block__right
+    {
+        gap: 40px;
+    }
+    .block__left-title
+    {
+        font-size: 29px;
+    }
+    .block__left-text
+    {
+        font-size: 13px;
+    }
+    .block__right-card-texts-title
+    {
+        font-size: 20px;
+    }
+    .block__left
+    {
+        max-width: 333px;
+    }
+    .block__right-card-texts-text
+    {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 886px) {
+    .container
+    {
+        padding: 0px 30px;
+    }
+    .block__wrapper
+    {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .block__left-title
+    {
+        text-align: center;
+    }
+    .block__left-text
+    {
+        text-align: center;
+    }
+    .block__left
+    {
+        align-items: center;
+    }
+}
+
+@media (max-width: 626px) {
+    .block__right
+    {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .block__right-group-first
+    {
+        gap: 20px;
+    }
+    .block__right-group-last
+    {
+        gap: 20px;
+    }
+    .block__left-title
+    {
+        font-size: 20px;
+    }
+    .block__left-text
+    {
+        font-size: 12px;
+    }
+}
