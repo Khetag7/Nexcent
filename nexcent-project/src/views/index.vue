@@ -4,7 +4,7 @@
 		<ourClients />
 		<ManageCommunity />
 		<unseenPixelgrade />
-
+		<helpingBusiness />
 
 	</lay>
 </template>
@@ -14,6 +14,7 @@
 	import ourClients from "@/components/sections/ourClients/ourClients.vue";
 	import ManageCommunity from "@/components/sections/ManageCommunity/ManageCommunity.vue";
 	import unseenPixelgrade from "@/components/sections/unseenPixelgrade/unseenPixelgrade.vue";
-
+	import HelpingBusiness from "@/components/sections/HelpingBusiness/HelpingBusiness.vue";
 	
+
 </script>
