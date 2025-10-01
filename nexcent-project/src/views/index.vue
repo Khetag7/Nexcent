@@ -6,6 +6,8 @@
 		<unseenPixelgrade />
 		<helpingBusiness />
 		<HowToDesign />
+		<AllCustomers />
+		<CaringMarketing />
 
 
 	</lay>
@@ -18,6 +20,8 @@
 	import unseenPixelgrade from "@/components/sections/unseenPixelgrade/unseenPixelgrade.vue";
 	import HelpingBusiness from "@/components/sections/HelpingBusiness/HelpingBusiness.vue";
 	import HowToDesign from "@/components/sections/HowToDesign/HowToDesign.vue";
-	
+	import AllCustomers from "@/components/sections/AllCustomers/AllCustomers.vue";
+	import CaringMarketing from "@/components/sections/CaringMarketing/CaringMarketing.vue";
+
 
 </script>
