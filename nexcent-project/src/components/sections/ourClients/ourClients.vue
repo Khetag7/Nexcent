@@ -72,5 +72,5 @@ const clientsData = ref([
 </script>
 
 <style scoped lang="scss">
-@use '@/components/sections/ourClients/ourClients.scss';
+@use '@/components/sections/ourClients/ourClients.scss'; 
 </style>
