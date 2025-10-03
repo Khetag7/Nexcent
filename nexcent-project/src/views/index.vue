@@ -8,7 +8,7 @@
 		<HowToDesign />
 		<AllCustomers />
 		<CaringMarketing />
-
+		<fringillaFree />
 
 	</lay>
 </template>
@@ -22,6 +22,7 @@
 	import HowToDesign from "@/components/sections/HowToDesign/HowToDesign.vue";
 	import AllCustomers from "@/components/sections/AllCustomers/AllCustomers.vue";
 	import CaringMarketing from "@/components/sections/CaringMarketing/CaringMarketing.vue";
+	import fringillaFree from "@/components/sections/fringillaFree/fringillaFree.vue";
 
 
 </script>
