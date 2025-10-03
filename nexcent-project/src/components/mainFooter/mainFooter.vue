@@ -40,7 +40,7 @@
                     </h4>
                     
                     <ul class="block__lists-firtsCol-list">
-                        <router-link to="#">
+                        <router-link to="/about">
                             <li>
                                 About us
                             </li>

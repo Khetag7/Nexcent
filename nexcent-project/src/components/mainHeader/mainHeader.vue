@@ -30,10 +30,10 @@
         </nav>
         
         <div class="header__entrance">
-            <router-link to="/#login" class="header__entrance-el-login">
+            <router-link to="/login" class="header__entrance-el-login">
                 <span class="header__entrance-text-login">Login</span>
             </router-link>
-            <router-link to="/#signUp" class="header__entrance-el-signUp">
+            <router-link to="/signUp" class="header__entrance-el-signUp">
                 <span class="header__entrance-text-signUp">Sign up</span>
             </router-link>
         </div>
