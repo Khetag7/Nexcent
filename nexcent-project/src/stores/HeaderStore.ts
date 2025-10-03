@@ -13,7 +13,7 @@ export const useHeaderStore = defineStore('HeaderStore', () => {
       {
           name: 'Service',
           id: 1,
-          path: '/#service'
+          path: '/service'
       },
       {
           name: 'Feature',
